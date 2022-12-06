@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+
+html,
+.student-page {
+  overscroll-behavior-y: contain;
+  overflow-x: hidden;
+}
+
+.student-page {
+  background: #eee;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+}
+
+h3 {
+  margin: 0% 0% 0% 2%;
+  font-family: "Raleway", sans-serif;
+  color: #111;
+  font-weight: 500;
+}
+
+.student-page .intro-information {
+  position: relative;
+  top: 0%;
+  margin-top: 7%;
+  left: 5%;
+  width: 70%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .student-page .intro-information {
+    text-align: center;
+  }
+}
+.student-page .intro-information .first-text-block h3 {
+  -webkit-text-decoration: underline rgb(87, 9, 190) 2px;
+          text-decoration: underline rgb(87, 9, 190) 2px;
+}
+.student-page .intro-information .first-text-block h4 {
+  margin-top: 1%;
+}
+.student-page .intro-information .first-text-block h3, .student-page .intro-information .first-text-block h4, .student-page .intro-information .first-text-block p {
+  text-align: left;
+  font-size: clamp(16px, 1vw, 24px);
+  font-family: "Raleway", sans-serif;
+  color: #111;
+  font-weight: 500;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .student-page .intro-information .first-text-block h3, .student-page .intro-information .first-text-block h4, .student-page .intro-information .first-text-block p {
+    text-align: center;
+  }
+}
+.student-page .intro-information .two-text-block {
+  padding-top: 2%;
+}
+.student-page .intro-information .two-text-block h3, .student-page .intro-information .two-text-block ul > li {
+  text-align: left;
+  font-size: clamp(16px, 1vw, 24px);
+  font-family: "Raleway", sans-serif;
+  color: #111;
+  font-weight: 500;
+}
+.student-page .intro-information .two-text-block ul {
+  text-align: left;
+  line-height: 25px;
+  font-size: clamp(16px, 1vw, 24px);
+}
+.student-page .block {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 5%;
+  margin-top: 1%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .student-page .block {
+    grid-template-columns: 65%;
+  }
+}
+.student-page .block .block-infor {
+  width: 100%;
+  background: #cacaca;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.student-page .block .block-infor a {
+  border-radius: 15px;
+  float: right;
+  position: relative;
+  text-decoration: none;
+  font-size: clamp(16px, 1vw, 24px);
+  color: rgb(255, 255, 255);
+  font-family: "Raleway", sans-serif;
+  padding: 1vw;
+  background: rgb(46, 46, 46);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.student-page .block .block-infor a:hover {
+  background: #cacaca;
+  color: #171717;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.student-page .block .block-infor h3 {
+  text-align: left;
+  font-size: clamp(16px, 1vw, 24px);
+  margin: 0% 0% 0% 2%;
+  font-family: "Raleway", sans-serif;
+  color: #111;
+  font-weight: 500;
+}
+.student-page .block .block-infor p {
+  text-align: left;
+  margin: 0% 0% 0% 2%;
+  font-family: "Raleway", sans-serif;
+  color: #111;
+  font-weight: 500;
+  font-size: clamp(16px, 1vw, 24px);
+  max-width: 80%;
+  margin-left: 3%;
+  margin-top: 5%;
+  padding: 1vw;
+}
+.student-page .block .block-prac {
+  width: 100%;
+  background: #cacaca;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 100%;
+  max-height: 100%;
+}
+.student-page .block .block-prac h3 {
+  font-size: clamp(16px, 2vw, 24px);
+  position: relative;
+  margin-top: 2%;
+}
+.student-page .block .block-prac .first-part-input {
+  margin: 0% 0% 0% 2%;
+}
+.student-page .block .block-prac .first-part-input h4 {
+  position: relative;
+  font-size: clamp(16px, 1vw, 24px);
+  font-family: "Raleway", sans-serif;
+  color: #111;
+  font-weight: 600;
+}
+.student-page .block .block-prac textarea {
+  margin: 2% 5% 0% 5%;
+  width: 90%;
+  max-width: 90%;
+  background-color: #dddddd;
+  max-height: 60%;
+  height: 20%;
+  font-size: 0.9rem;
+}
+.student-page .upload-btns {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap: 10% 2%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .student-page .upload-btns {
+    grid-template-columns: 65%;
+  }
+}
+.student-page .upload-btns .temp {
+  background: #171717;
+  padding: 0vw;
+  position: relative;
+}
+.student-page .upload-btns .temp a {
+  font-size: clamp(12px, 1vw, 16vw);
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.student-page .upload-btns .temp:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.4s;
+  background: #fff;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.student-page .upload-btns .temp:hover a {
+  color: #111;
+}
+.student-page .grid-temp {
+  padding-top: 5rem;
+  position: relative;
+  margin-top: 0%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap: 2% 1%;
+}
+.student-page .grid-temp h2 {
+  position: relative;
+  text-align: center;
+  font-size: clamp(16px, 2vw, 24px);
+  font-family: "Raleway", sans-serif;
+  color: #111;
+  font-weight: 500;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .student-page .grid-temp {
+    grid-template-columns: 65%;
+  }
+}
+.student-page .grid-temp .section {
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  background: #171717;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.student-page .grid-temp .section h3 {
+  padding: 3%;
+  font-size: clamp(12px, 1.1vw, 16vw);
+  font-family: "Raleway", sans-serif;
+  color: #f1f1f1;
+  font-weight: 500;
+  max-width: 80%;
+}
+.student-page .grid-temp .section button {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(23, 118, 207);
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.2s all ease-in-out;
+  font-size: clamp(8px, 0.6vw, 16vw);
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -ms-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+}
+.student-page .grid-temp .section button:hover {
+  transition: 0.4s all ease-in-out;
+  color: #fff;
+  background-color: #171717;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  border: 1px #eee solid;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  -ms-transition: 0.4s all ease-in-out;
+  -o-transition: 0.4s all ease-in-out;
+}/*# sourceMappingURL=style.css.map */

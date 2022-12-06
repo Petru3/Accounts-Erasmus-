@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+}
+// Default
+::-webkit-scrollbar {
+    overflow: hidden;
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+//Import fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+.admin-page{
+    overscroll-behavior-y: contain;
+    overflow-x: hidden;
+    background: #eee;
+    font-size: 16px;
+    width:100%;
+    height:100vh;
+}
+h3, h4,h2,label{
+    font-family: 'Raleway', sans-serif;
+    color:rgb(240, 240, 240);
+    font-weight: 500;
+}
+
+li::marker{
+    font-size: 0vw;
+}
+.admin-page{
+    .blocks{
+        display: grid;
+        grid-template-columns: 30% 15% 30%;
+        grid-template-rows: auto;
+        gap: 3%;
+        margin-top: 10%;
+        justify-content: center;
+
+        @media only screen and (min-width:320px) and (max-width:768px){
+            grid-template-columns: 65%;
+        }
+
+        #title{
+            padding-top: 2%;
+        }
+        .add{
+            position: relative;
+            padding: 2% 0% 0% 5%;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            width:100%;
+            height:100%;
+            background: #171717;
+
+            h3{
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+                font-size: clamp(12px, 1vw, 16px);
+            }
+            
+            .type{
+                text-align: left;
+                padding-top:2%;
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+            }
+            .profil::marker{
+                font-size:0vw;
+            }
+            .profil{
+                text-align: left;
+                padding-top: 5px;
+                padding-top:2%;
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+            }
+            ul::marker{
+                padding-top: 1%;
+                font-size: 0rem;
+            }
+            .name-stats{
+                padding:1vw;
+                display: list-item;
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+            }
+            button{
+                margin:1vw;
+                position: relative;
+                top:0%;
+                justify-content: center;
+                align-items: center;
+
+                border: none;
+                background: rgb(9, 134, 218);
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+                color:#f1f1f1;
+                font-size: clamp(12px, 1vw, 16vw);
+                text-align: center;
+
+                padding: 1vw;
+
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                
+                transition: .2s all ease-in-out;
+                -webkit-transition: .2s all ease-in-out;
+                -moz-transition: .2s all ease-in-out;
+                -ms-transition: .2s all ease-in-out;
+                -o-transition: .2s all ease-in-out;
+            }
+            button:hover{
+                background: rgb(0, 67, 155);
+                transition: .2s all ease-in-out;
+                -webkit-transition: .2s all ease-in-out;
+                -moz-transition: .2s all ease-in-out;
+                -ms-transition: .2s all ease-in-out;
+                -o-transition: .2s all ease-in-out;
+            }
+        }
+        .delete{
+            position: relative;
+            padding: 4% 0% 0% 0%;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+        
+            width:100%;
+            height:100%;
+            background: #171717;
+            h3{
+                color: #f1f1f1;
+                font-size: clamp(12px, 1.5vw, 24px);
+            }
+            ul{
+                font-size: clamp(12px, 1vw, 19px);
+                padding-top: 5%;
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+            }
+            button{
+                margin: 1%;
+                padding: 2%;
+                position: relative;
+                border: none;
+                background: rgb(9, 134, 218);
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+                color:#f1f1f1;
+                font-size: clamp(12px, 1vw, 19px);
+                text-align: center;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                transition: .4s all ease-in-out;
+            }
+            button:hover{
+                background: rgb(0, 67, 155);
+                transition: .2s all ease-in-out;
+                -webkit-transition: .2s all ease-in-out;
+                -moz-transition: .2s all ease-in-out;
+                -ms-transition: .2s all ease-in-out;
+                -o-transition: .2s all ease-in-out;
+            }
+        }
+    }
+    .upload-btns{
+        padding-top:2%;
+        justify-content: center;
+        position: relative;
+
+        .add-forms{
+            width:100%;
+            height:100%;
+            justify-content: center;
+            background: #171717;
+            border-radius: 15px;
+            position: relative;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            h4{
+                margin: 0%;
+                font-family: 'Raleway', sans-serif;
+                color:rgb(255, 255, 255);
+                font-weight: 500;
+                font-size: clamp(12px, 1.3vw, 24px);
+            }
+            #input-title{
+                margin-top:5%;
+                height:2vw;
+                padding:1%;
+                width:60%;
+                height:auto;
+                font-size: clamp(12px, 1vw, 16px);
+            }
+            input::placeholder{
+                font-size: clamp(12px, 1vw, 16px);
+            }
+            #input-link{
+                margin:2%;
+                height:2vw;
+                padding:1%;
+                width:60%;
+                height:auto;
+            }
+            button{
+                position: relative;
+                font-size: clamp(12px, 1vw, 16px);
+                margin: 1%;
+                width:5vw;
+
+                height:auto;
+                font-family: 'Raleway', sans-serif;
+                color:#111;
+                text-decoration: none;
+            }
+        }
+    }
+    .show-quiz{
+        justify-content: center;
+        position: relative;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        gap:10% 2%;
+        padding-top:5%;
+
+        @media only screen and (min-width:320px) and (max-width:768px){
+            grid-template-columns: 65%;
+            padding-top:10%;
+        }
+
+        .temp{
+            background: #171717;
+            padding: .5vw;
+            position: relative;
+            transition: .4s all ease-in-out;
+            a{
+                justify-content: center;
+                align-items: center;
+                font-family: 'Raleway', sans-serif;
+                color:#fff;
+                text-decoration: none;
+            }
+        }
+        .temp:hover{
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: .4s all ease-in-out;
+            background:#fff;
+            -webkit-transition: .4s all ease-in-out;
+            -moz-transition: .4s all ease-in-out;
+            -ms-transition: .4s all ease-in-out;
+            -o-transition: .4s all ease-in-out;
+            a{
+                color:#111;
+            }
+        }
+    }
+}
